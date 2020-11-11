@@ -9,7 +9,7 @@ The dataset used to train and test the prediction model was obtained from the UC
 The original dataset has also been uploaded to this repository and can be directly used.
 ### Description
 The dataset consists of the features of a digitized image of a breast cell mass. 
-Attributes information:
+*Attributes information:*
 1) ID number
 2) Diagnosis (M = malignant, B = benign)
 
@@ -26,9 +26,9 @@ h) concave points (number of concave portions of the contour) \
 i) symmetry \
 j) fractal dimension 
 
-For every sample, the mean, standard error and largest (mean of the three largest values) were computed for each image, resulting in a total of 30 features.
+For every sample, the *mean, standard error and largest values* (mean of the three largest values) were computed for each image, resulting in a total of 30 features.
 ## Approach
-The original data was cleaned after performing exploratory data analysis (EDA). The cleaned dataset can also be found for direct use in this repository. 
-A Support Vector Classifier (SVC) was used as the prediction model, in unison with Grid Search hyperparameter tuning (with 3-fold cross validation). recall_score was used as the scoring parameter, as with medical aplications, we need to have high number of both true and false positives. It is better to have a wrong diagnosis than a missed one.
+The original data was cleaned after performing *exploratory data analysis (EDA)*. The cleaned dataset can also be found for direct use in this repository. 
+A **Support Vector Classifier (SVC)** was used as the prediction model, in unison with *Grid Search* hyperparameter tuning (with 3-fold cross validation). *recall_score* was used as the scoring parameter, as with medical aplications, we need to have high number of both true and false positives. It is better to have a wrong diagnosis than a missed one.
 
 The final classifier had a recall_score of approximately 0.901, hence further imporovements are required to make the classification even more accurate.
