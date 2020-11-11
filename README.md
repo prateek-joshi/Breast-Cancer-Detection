@@ -15,7 +15,7 @@ Attributes information:
 
 Ten real-valued features are computed for each cell nucleus:
 
-a) radius (mean of distances from center to points on the perimeter)
+a) radius (mean of distances from center to points on the perimeter)\n
 b) texture (standard deviation of gray-scale values)
 c) perimeter
 d) area
