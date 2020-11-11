@@ -16,16 +16,19 @@ Attributes information:
 Ten real-valued features are computed for each cell nucleus:
 
 a) radius (mean of distances from center to points on the perimeter) \
-b) texture (standard deviation of gray-scale values)
-c) perimeter
-d) area
-e) smoothness (local variation in radius lengths)
-f) compactness (perimeter^2 / area - 1.0)
-g) concavity (severity of concave portions of the contour)
-h) concave points (number of concave portions of the contour)
-i) symmetry
+b) texture (standard deviation of gray-scale values) \
+c) perimeter \
+d) area \
+e) smoothness (local variation in radius lengths) \
+f) compactness (perimeter^2 / area - 1.0) \
+g) concavity (severity of concave portions of the contour) \
+h) concave points (number of concave portions of the contour) \
+i) symmetry \
 j) fractal dimension 
 
 For every sample, the mean, standard error and largest (mean of the three largest values) were computed for each image, resulting in a total of 30 features.
 ## Approach
 The original data was cleaned after performing exploratory data analysis (EDA). The cleaned dataset can also be found for direct use in this repository. 
+A Support Vector Classifier (SVC) was used as the prediction model, in unison with Grid Search hyperparameter tuning (with 3-fold cross validation). recall_score was used as the scoring parameter, as with medical aplications, we need to have high number of both true and false positives. It is better to have a wrong diagnosis than a missed one.
+
+The final classifier had a recall_score of approximately 0.901, hence further imporovements are required to make the classification even more accurate.
