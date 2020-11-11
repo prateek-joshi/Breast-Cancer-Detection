@@ -4,7 +4,7 @@ Breast cancer is the most frequent cancer among women, impacting 2.1 million wom
 ## Dataset
 The dataset used to train and test the prediction model was obtained from the UCI Machine Learning Repository.
 1. https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
-2. https://www.kaggle.com/uciml/breast-cancer-wisconsin-data (Can also be downloaded from Kaggle.)
+2. https://www.kaggle.com/uciml/breast-cancer-wisconsin-data 
 
 The original dataset has also been uploaded to this repository and can be directly used.
 ### Description
