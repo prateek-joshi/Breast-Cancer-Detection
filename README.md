@@ -31,4 +31,4 @@ For every sample, the *mean, standard error and largest values* (mean of the thr
 The original data was cleaned after performing *exploratory data analysis (EDA)*. The cleaned dataset can also be found for direct use in this repository. 
 A **Support Vector Classifier (SVC)** was used as the prediction model, in unison with *Grid Search* hyperparameter tuning (with 3-fold cross validation). *recall_score* was used as the scoring parameter, as with medical aplications, we need to have high number of both true and false positives. It is better to have a wrong diagnosis than a missed one.
 
-The final classifier had a recall_score of approximately 0.901. Hence, further imporovements are required to make the classification even more accurate.
+The final classifier had a recall_score of approximately 0.901. Hence, further improvements are required to make the classification even more accurate.
